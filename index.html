@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Jyoti Garde" content="Portfolio Website" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/85f5d915d3.js" crossorigin="anonymous"></script>
+    <title>Jyoti Garde</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container navbar-container">
+                <input type="checkbox">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="logo">
+                    <a href="./index.html"><strong>&lt;J.G./&gt;</strong></a>
+                </div>
+                
+                    <ul class="nav-links">
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+            
+            </div>
+        </nav>
+        <div class="header-content">
+            <div class="header-main-content">
+                <h1 class="text-light hey">Hey, I'm</h1>
+
+                <!-- <span class="emoji"></span> -->
+                <h1 class="name text-light">JYOTI GARDE</h1>
+                <p class="text-light">Learner | Front End Developer | Open Source Contributor</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="about-me" class="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <h1>ABOUT ME</h1>
+                <p>Hello, <br /> I'm Jyoti Garde, currently enjoying my engineering journey from D.Y. Patil College Of
+                    Engineering, Akurdi, Pune.<br> I'm interested in Web Developement. I'm also interested in
+                    Competitive programming and Open source contributing.<br /> I'm a beginner and LEARNER! <br />Apart
+                    from technical, I like to draw, travel and also like to know about space research!</p>
+            </div>
+            <div class="about-img">
+                <img src="./img/aboutme.png" alt="Profile Photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="education-wrapper container">
+            <h1 class="edu-h1">EDUCATION</h1>
+
+            <div class="deg-clg">
+                <img src="./img/DYPLogo.jpg" alt="DYP Logo" class="deg-clg-logo">
+                <h2>D.Y. Patil College Of Engineering, Akurdi, Pune.</h2>
+                <h3>Bachelor Of Engineering ( B.E.)</h3>
+                <p>Computer Engineering [ 2019 - 2023 ]</p>
+            </div>
+
+            <div class="jr-clg">
+                <img src="./img/JrClgLogo.png" alt="Junior college logo" class="jr-clg-logo">
+                <h2>Jai Hind High School & Junior College, Dhule.</h2>
+                <h3>Higher Secondary Certificate Examination( HSC )</h3>
+                <p>Science [ 2017 - 2019 ]</p>
+            </div>
+
+        </div>
+        <!-- <div class="achivements">
+            <h1>ACHIVEMENTS</h1>
+
+        </div> -->
+    </section>
+
+    <section id="skills" class="skills-bg">
+        <div class="skills-wrapper container">
+            <h2>BEGINNER | LEARNER</h2>
+            <div class="skills-img">
+                <img src="./img/skills.jpeg" alt="skills">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <hr class="conthr">
+            <h2 class="text-light">Thank you for visiting!</h2>
+            <hr class="conthr">
+
+            <p>Designed with <i class="fa fa-heart pulse"></i> by <strong>Jyoti Garde</strong> </p>
+            <div class="social-media-links">
+                <a href="https://www.linkedin.com/in/jyoti2714/" class="text-light social-icon"><i
+                        class="fab fa-linkedin-in fa-4x"></i></a>
+                <a href="https://github.com/JyotiGarde-27" class="text-light social-icon"><i
+                        class="fab fa-github fa-4x"></i></a>
+            </div>
+        </div>
+    </section>
+<!-- ########################### for smooth scrolling #############################  -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (400) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 400, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+</body>
+
+</html>
