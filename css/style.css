@@ -173,7 +173,7 @@ p li{
     flex: 1 1 400px;
     padding: 30px;
     margin: auto;
-    transform: translate(-150%);
+    transform: translateX(-150%);
     animation: about-text-animation 2s ease-in-out forwards;
 }
 
@@ -247,11 +247,18 @@ p li{
     font-size: 1.7rem;
 }
 
-.education p::after{
+/* .education p::after{
     content: '';
     display: block;
     border: 0.5px solid hsla(0, 0%, 83%, 0.486);
     width: 45em;
+    margin-top: 1.5em;
+    display: none;
+} */
+
+.eduhr{
+    width: 100%;
+    border: 0.5px solid hsla(0, 0%, 83%, 0.486);
     margin-top: 2em;
 }
 
@@ -363,7 +370,7 @@ p li{
         display: block;
         height: 32px;
         width: 40px;
-        position: relative;
+        position: absolute;
         top: 20px;
         left: 20px;
         z-index: 2;
@@ -421,7 +428,7 @@ p li{
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .nav-links{
-        transform: translateX(0)
+        transform: translateX(0);
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
@@ -454,11 +461,9 @@ p li{
         display: none;
     }
 
-    .education p::after{
-        content: '';
-        display: block;
+    .eduhr{
+        width: 100%;
         border: 0.5px solid hsla(0, 0%, 83%, 0.486);
-        width: 40em;
         margin-top: 2em;
     }
 
@@ -469,7 +474,20 @@ p li{
         padding-top: 1em;
     }
 
-    /* ############ skills ##############  */
+    /* ############ About #############  */
+
+    .about-img img{
+        display: block;
+        height: 220px;
+        max-width: 100%;
+        margin: auto;
+        object-fit: cover;
+        object-position: center;
+        box-shadow: 8px 10px 20px 0px rgba(0, 0, 0, 0.60);
+        border-radius: 1.6em;
+    }
+
+    /* ############ skills ############# */
 
     .skills-img img{
         display: block;
@@ -499,7 +517,7 @@ p li{
 
     .skills-img img{
         display: block;
-        height: 200px;
+        height: 180px;
         max-width: 100%;
         margin: auto;
         object-fit: cover;
@@ -509,11 +527,4 @@ p li{
         transition: transform 0.5s ease-in-out;
     }
 
-    .education p::after{
-        content: '';
-        display: block;
-        border: 0.5px solid hsla(0, 0%, 83%, 0.486);
-        width: 25em;
-        margin-top: 2em;
-    }
 }
