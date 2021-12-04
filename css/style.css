@@ -173,15 +173,15 @@ p li{
     flex: 1 1 400px;
     padding: 30px;
     margin: auto;
-    transform: translateX(-150%);
-    animation: about-text-animation 2s ease-in-out forwards;
+    /* transform: translateX(-150%);
+    animation: about-text-animation 2s ease-in-out forwards; */
 }
 
-@keyframes about-text-animation {
+/* @keyframes about-text-animation {
     100%{
         transform: translate(0);
     }
-}
+} */
 
 .about-img img{
     display: block;
@@ -281,12 +281,12 @@ p li{
     object-position: center;
     box-shadow: 0px 0px 20px 0px rgba(54, 54, 54, 0.5);
     border-radius: 1.6em;
-    transition: transform 0.5s ease-in-out;
+    /* transition: transform 0.5s ease-in-out; */
 }
 
-.skills-img:hover{
+/* .skills-img:hover{
     transform: scale(1.05);
-}
+} */
 
 .skills-wrapper h2{
     color: #ccc;
